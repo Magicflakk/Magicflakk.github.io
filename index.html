@@ -1,91 +1,79 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Magic Media - Producción Audiovisual y Diseño Gráfico</title>
-	<link rel="stylesheet" href="style.css">
-	<!-- Añadimos una fuente personalizada -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<!-- Añadimos una animación al título -->
-	<style>
-		h1 {
-			animation: bounce 1s infinite;
-		}
-		@keyframes bounce {
-			0% {transform: translateY(0);}
-			50% {transform: translateY(-10px);}
-			100% {transform: translateY(0);}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Media - Producción Audiovisual y Diseño Gráfico</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<!-- Añadimos un efecto de hover a los enlaces del menú -->
-				<li><a href="#" class="menu-link">Inicio</a></li>
-				<li><a href="#" class="menu-link">Nosotros</a></li>
-				<li><a href="#" class="menu-link">Servicios</a></li>
-				<li><a href="#" class="menu-link">Proyectos</a></li>
-				<li><a href="#" class="menu-link">Contacto</a></li>
-			</ul>
-		</nav>
-		<h1>Magic Media</h1>
-		<h2>Producción Audiovisual y Diseño Gráfico</h2>
-	</header>
-	<main>
-		<section>
-			<h3>Nosotros</h3>
-			<p>Magic Media es una empresa de producción audiovisual y diseño gráfico ubicada en Chile. Nos enfocamos en brindar servicios personalizados y de alta calidad a nuestros clientes. Nos destacamos por nuestro compromiso en cada proyecto y por ofrecer un servicio exclusivo e irrepetible.</p>
-			<p>Nuestros valores son la creatividad, la innovación, la excelencia y el compromiso con nuestros clientes. Nos apasiona lo que hacemos y nuestro objetivo es hacer que cada proyecto sea mágico y único.</p>
-			<h4>Nuestro equipo</h4>
-			<ul>
-				<li>Juan Pérez - Director de Producción</li>
-				<li>María González - Diseñadora Gráfica</li>
-				<li>Carlos Rodríguez - Editor de Video</li>
-				<li>Patricia Vargas - Fotógrafa</li>
-				<li>Alejandra Castro - Animadora</li>
-			</ul>
-		</section>
-		<section>
-			<h3>Servicios</h3>
-			<ul>
-				<li>Producción audiovisual</li>
-				<li>Diseño gráfico</li>
-				<li>Fotografía</li>
-				<li>Edición de video</li>
-				<li>Animación</li>
-				<li>Postproducción</li>
-				<li>Sonido</li>
-			</ul>
-		</section>
-		<section>
-			<h3>Proyectos Recientes</h3>
-			<ul>
-				<li><a href="#">Video Promocional para XYZ</a></li>
-				<li><a href="#">Animación paraXYZ</a></li>
-				<li><a href="#">Diseño de imagen corporativa para ABC</a></li>
-<li><a href="#">Fotografía de producto para DEF</a></li>
-<li><a href="#">Video clip musical para GHI</a></li>
-</ul>
-</section>
-<section>
-<h3>Contacto</h3>
-<form action="enviar.php" method="POST">
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre" required>
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" required>
-<label for="mensaje">Mensaje:</label>
-<textarea id="mensaje" name="mensaje" required></textarea>
-<input type="submit" value="Enviar">
-</form>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-link">Inicio</a></li>
+                <li><a href="#" class="menu-link">Nosotros</a></li>
+                <li><a href="#" class="menu-link">Servicios</a></li>
+                <li><a href="#" class="menu-link">Proyectos</a></li>
+                <li><a href="#" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Magic Media</h1>
+            <h2>Producción Audiovisual y Diseño Gráfico</h2>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <h3>Nosotros</h3>
+            <p>Magic Media es una empresa de producción audiovisual y diseño gráfico ubicada en Chile. Nos enfocamos en brindar servicios personalizados y de alta calidad a nuestros clientes. Nos destacamos por nuestro compromiso en cada proyecto y por ofrecer un servicio exclusivo e irrepetible.</p>
+            <p>Nuestros valores son la creatividad, la innovación, la excelencia y el compromiso con nuestros clientes. Nos apasiona lo que hacemos y nuestro objetivo es hacer que cada proyecto sea mágico y único.</p>
+            <h4>Nuestro equipo</h4>
+            <ul class="team-list">
+                <li>Juan Pérez - Director de Producción</li>
+                <li>María González - Diseñadora Gráfica</li>
+                <li>Carlos Rodríguez - Editor de Video</li>
+                <li>Patricia Vargas - Fotógrafa</li>
+                <li>Alejandra Castro - Animadora</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h3>Servicios</h3>
+            <ul class="services-list">
+                <li>Producción audiovisual</li>
+                <li>Diseño gráfico</li>
+                <li>Fotografía</li>
+                <li>Edición de video</li>
+                <li>Animación</li>
+                <li>Postproducción</li>
+                <li>Sonido</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h3>Proyectos Recientes</h3>
+            <ul class="projects-list">
+                <li><a href="#">Video Promocional para XYZ</a></li>
+                <li><a href="#">Animación para XYZ</a></li>
+                <li><a href="#">Diseño de imagen corporativa para ABC</a></li>
+                <li><a href="#">Fotografía de producto para DEF</a></li>
+                <li><a href="#">Video clip musical para GHI</a></li>
+            </ul>
+        </section>
+<section class="section">
+    <h3>Contacto</h3>
+    <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
 </section>
 </main>
 <footer>
-<p>© Magic Media 2023 - Todos los derechos reservados</p>
+    <p>© Magic Media 2023 - Todos los derechos reservados</p>
 </footer>
 
 </body>
-</html> 
+</html>
