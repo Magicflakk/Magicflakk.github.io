@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nombre de la página</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Shot by MAGIC - Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <h1>Nombre del servicio</h1>
-    </div>
     <nav>
       <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#trabajos">Trabajos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Trabajos</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
+    <h1>SHOT BY MAGIC</h1>
   </header>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Videos promocionales</li>
-      <li>Videos musicales</li>
-      <li>Videos corporativos</li>
-      <li>Animaciones 2D y 3D</li>
-      <li>Diseño gráfico</li>
-    </ul>
+  
+  <section class="hero">
+    <h2>Convierte tus ideas en realidad</h2>
+    <p>Shot by MAGIC te ayuda a crear piezas audiovisuales y gráficas únicas para que puedas comunicar tu mensaje de manera efectiva.</p>
+    <a href="#" class="cta">Contáctanos</a>
   </section>
-
-  <section id="trabajos">
-    <h2>Trabajos</h2>
-    <div class="trabajo">
-      <img src="img/trabajo1.jpg" alt="Nombre del trabajo">
-      <h3>Nombre del trabajo</h3>
-      <p>Descripción breve del trabajo realizado.</p>
+  
+  <section class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service">
+      <h3>Videos Musicales</h3>
+      <p>Realizamos videos musicales únicos y creativos que destacarán tu música.</p>
     </div>
-    <div class="trabajo">
-      <img src="img/trabajo2.jpg" alt="Nombre del trabajo">
-      <h3>Nombre del trabajo</h3>
-      <p>Descripción breve del trabajo realizado.</p>
+    <div class="service">
+      <h3>Contenido de Marca</h3>
+      <p>Creamos contenido de marca personalizado para ayudarte a destacar en el mercado.</p>
     </div>
-    <div class="trabajo">
-      <img src="img/trabajo3.jpg" alt="Nombre del trabajo">
-      <h3>Nombre del trabajo</h3>
-      <p>Descripción breve del trabajo realizado.</p>
+    <div class="service">
+      <h3>Videos Corporativos</h3>
+      <p>Generamos videos corporativos para presentar tu empresa de manera profesional.</p>
     </div>
   </section>
-
-  <section id="contacto">
+  
+  <section class="portfolio">
+    <h2>Trabajos Recientes</h2>
+    <div class="gallery">
+      <img src="img/project1.jpg" alt="Proyecto 1">
+      <img src="img/project2.jpg" alt="Proyecto 2">
+      <img src="img/project3.jpg" alt="Proyecto 3">
+      <img src="img/project4.jpg" alt="Proyecto 4">
+    </div>
+  </section>
+  
+  <section class="contact">
     <h2>Contacto</h2>
-    <form action="enviar.php" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <form action="submit-form.php" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
-      <input type="submit" value="Enviar">
+      <input type="email" id="email" name="email">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </section>
-
+  
   <footer>
-    <p>Derechos reservados © 2023</p>
+    <p>© Shot by MAGIC 2023</p>
   </footer>
+  
 </body>
 </html>
