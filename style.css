@@ -1,127 +1,99 @@
-/* Estilo para el encabezado */
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header styles */
 header {
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  background-color: #f00;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
 }
 
 nav li {
-    margin: 0 20px;
+  margin-right: 1em;
 }
 
 nav a {
-    color: #000;
-    text-decoration: none;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #00f;
+  color: #000;
 }
 
 h1 {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 32px;
-    margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #fff;
 }
 
-p {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    color: #666;
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #fff;
 }
 
-/* Estilo para los servicios */
-.service {
-    margin-bottom: 50px;
+/* Main styles */
+main {
+  padding: 2em;
 }
 
-.service h3 {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 24px;
-    margin: 0 0 10px;
+section {
+  margin-bottom: 2em;
 }
 
-.service p {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    color: #666;
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
-/* Estilo para la galería */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+ul {
+  list-style: none;
+  margin-left: 1em;
 }
 
-.gallery img {
-    width: 100%;
+li:before {
+  content: '●';
+  margin-right: 0.5em;
+  color: #f00;
 }
 
-/* Estilo para la sección "Nosotros" */
-#about p {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    color: #666;
+li a {
+  color: #333;
+  text-decoration: none;
 }
 
-/* Estilo para el formulario de contacto */
-form label {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: block;
-    color: #666;
+li a:hover {
+  text-decoration: underline;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #f00;
-}
-
-/* Estilo para el pie de página */
+/* Footer styles */
 footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-footer p {
-    margin: 0;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 14px;
+  background-color: #f00;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
 }
