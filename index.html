@@ -12,14 +12,12 @@
 		h1 {
 			animation: bounce 1s infinite;
 		}
-css
-Copy code
-	@keyframes bounce {
-		0% {transform: translateY(0);}
-		50% {transform: translateY(-10px);}
-		100% {transform: translateY(0);}
-	}
-</style>
+		@keyframes bounce {
+			0% {transform: translateY(0);}
+			50% {transform: translateY(-10px);}
+			100% {transform: translateY(0);}
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -66,24 +64,19 @@ Copy code
 			<h3>Proyectos Recientes</h3>
 			<ul>
 				<li><a href="#">Video Promocional para XYZ</a></li>
-				<li><a href="#">Animación para ABC</a></li>
-				<li><a href="#">Diseño de Identidad Corporativa para DEF</a></li>
-				<li><a href="#">Fotografía de Producto para GHI</a></li>
-				<li><a href="#">Edición de Video para JKL</a></li>
+				<li><a href="#">Animación paraXYZ</a></li>
+				<li><a href="#">Diseño de imagen corporativa para ABC</a></li>
+<li><a href="#">Fotografía de producto para DEF</a></li>
+<li><a href="#">Video clip musical para GHI</a></li>
 </ul>
 </section>
 <section>
 <h3>Contacto</h3>
-
-	<form action="#" method="post">
-
-		<label for="nombre">Nombre:</label>
-
-		<input type="text" id="nombre" name="nombre" required>
-
-		<label for="correo">Correo Electrónico:</label>
-
-		<input type="email" id="correo" name="correo" required>
+<form action="enviar.php" method="POST">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
 <label for="mensaje">Mensaje:</label>
 <textarea id="mensaje" name="mensaje" required></textarea>
 <input type="submit" value="Enviar">
@@ -91,7 +84,8 @@ Copy code
 </section>
 </main>
 <footer>
-<p>Magic Media © 2023. Todos los derechos reservados.</p>
+<p>© Magic Media 2023 - Todos los derechos reservados</p>
 </footer>
+
 </body>
-</html>
+</html> 
