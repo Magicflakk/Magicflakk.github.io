@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Shot by MAGIC</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Shot by MAGIC</h1>
-      <nav>
-        <ul>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="hero">
-        <h2>Video y fotografía de alta calidad</h2>
-        <p>Capturamos momentos mágicos que durarán para siempre</p>
-        <a href="#contacto" class="cta">Contáctanos</a>
-      </section>
-      <section id="portfolio">
-        <h2>Nuestro portafolio</h2>
-        <ul class="gallery">
-          <li><img src="img/1.jpg" alt=""></li>
-          <li><img src="img/2.jpg" alt=""></li>
-          <li><img src="img/3.jpg" alt=""></li>
-          <li><img src="img/4.jpg" alt=""></li>
-          <li><img src="img/5.jpg" alt=""></li>
-          <li><img src="img/6.jpg" alt=""></li>
-        </ul>
-      </section>
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Shot by MAGIC &copy; 2023</p>
-    </footer>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre de la página</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Nombre del servicio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Videos promocionales</li>
+      <li>Videos musicales</li>
+      <li>Videos corporativos</li>
+      <li>Animaciones 2D y 3D</li>
+      <li>Diseño gráfico</li>
+    </ul>
+  </section>
+
+  <section id="trabajos">
+    <h2>Trabajos</h2>
+    <div class="trabajo">
+      <img src="img/trabajo1.jpg" alt="Nombre del trabajo">
+      <h3>Nombre del trabajo</h3>
+      <p>Descripción breve del trabajo realizado.</p>
+    </div>
+    <div class="trabajo">
+      <img src="img/trabajo2.jpg" alt="Nombre del trabajo">
+      <h3>Nombre del trabajo</h3>
+      <p>Descripción breve del trabajo realizado.</p>
+    </div>
+    <div class="trabajo">
+      <img src="img/trabajo3.jpg" alt="Nombre del trabajo">
+      <h3>Nombre del trabajo</h3>
+      <p>Descripción breve del trabajo realizado.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="enviar.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>Derechos reservados © 2023</p>
+  </footer>
+</body>
 </html>
