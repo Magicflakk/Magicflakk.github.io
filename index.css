@@ -13,6 +13,10 @@ header {
   padding: 20px;
 }
 
+header h1 {
+  text-align: center; /* Añade esta propiedad para centrar el título */
+}
+
 nav ul {
   display: flex;
   list-style: none;
