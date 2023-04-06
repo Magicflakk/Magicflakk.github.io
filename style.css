@@ -1,113 +1,127 @@
-/* Fuentes */
-body {
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-h1, h2, h3 {
-font-family: "Montserrat", sans-serif;
-}
-
-/* Colores /
-body {
-color: black;
-background-color: white;
-}
-a {
-color: #1e90ff; / Azul oscuro /
-}
-h1, h2, h3 {
-color: #e60000; / Rojo /
-}
-#services, #portfolio, #about, #contact {
-background-color: #f8f8f8; / Gris claro */
+/* Estilo para el encabezado */
+header {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Estilo de enlaces /
-a {
-text-decoration: none;
-border-bottom: 2px solid #1e90ff; / Azul oscuro /
-}
-a:hover {
-border-bottom-color: #e60000; / Rojo */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo de galería */
-.gallery {
-display: flex;
-flex-wrap: wrap;
-}
-.gallery img {
-width: 50%;
-padding: 10px;
-box-sizing: border-box;
+nav li {
+    margin: 0 20px;
 }
 
-/* Estilo de formulario /
-form {
-display: flex;
-flex-direction: column;
-}
-label, input, textarea {
-margin: 5px 0;
-font-size: 1.2em;
-}
-input, textarea {
-padding: 5px;
-border: none;
-border-bottom: 2px solid #1e90ff; / Azul oscuro /
-background-color: transparent;
-}
-input:focus, textarea:focus {
-outline: none;
-border-bottom-color: #e60000; / Rojo /
-}
-button[type="submit"] {
-margin-top: 10px;
-padding: 10px;
-background-color: #1e90ff; / Azul oscuro /
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-button[type="submit"]:hover {
-background-color: #e60000; / Rojo */
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
-/* Estilo de encabezado y pie de página */
-header, footer {
-background-color: black;
-color: white;
-text-align: center;
-}
-header h1 {
-font-size: 3em;
-margin: 0;
-}
-header p {
-font-size: 1.5em;
-margin: 0;
-}
-footer p {
-font-size: 0.8em;
-margin: 0;
-padding: 10px;
+nav a:hover {
+    color: #00f;
 }
 
-/* Estilo de secciones */
-section {
-padding: 50px 20px;
+h1 {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 32px;
+    margin: 0;
 }
 
-/* Estilo de servicios /
+p {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* Estilo para los servicios */
 .service {
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .service h3 {
-margin: 0;
-font-size: 2em;
-color: #e60000; / Rojo */
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0 0 10px;
 }
+
 .service p {
-margin: 20px 0;
-font-size: 1.2em;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* Estilo para la sección "Nosotros" */
+#about p {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* Estilo para el formulario de contacto */
+form label {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #666;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f00;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 14px;
 }
