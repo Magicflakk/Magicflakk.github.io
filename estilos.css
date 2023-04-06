@@ -1,135 +1,131 @@
-/* CSS para la landing page de Shot by Magic */
+/* Estilos para la página principal */
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 /* Estilos generales */
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-image: linear-gradient(to bottom, #000000, #333333);
 }
 
+/* Contenedor principal */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
 }
 
-/* Estilos para la barra de navegación */
-
-nav {
+/* Encabezado */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 
-nav img {
-  height: 40px;
-  width: auto;
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
 }
 
-nav ul {
+.header ul {
   display: flex;
-  list-style: none;
 }
 
-nav li:not(:last-child) {
-  margin-right: 20px;
+.header li {
+  margin-left: 20px;
 }
 
-nav a {
+.header a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  font-size: 1.2rem;
 }
 
-nav a:hover {
-  color: #c4c4c4;
-}
-
-/* Estilos para el encabezado */
-
-header {
+/* Banner */
+.banner {
+  background-image: linear-gradient(to bottom right, #2e2e2e, #4c4c4c);
+  padding: 100px 0;
   text-align: center;
-  margin-top: 100px;
 }
 
-header h1 {
+.banner h2 {
+  font-size: 3rem;
+  font-weight: 500;
   color: #fff;
-  font-size: 48px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
-header p {
+.banner p {
+  font-size: 1.2rem;
   color: #fff;
-  font-size: 24px;
   margin-bottom: 40px;
 }
 
-/* Estilos para los servicios */
+.banner button {
+  background-color: #fff;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.banner button:hover {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+/* Servicios */
 .services {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .service {
   flex-basis: calc(33.33% - 20px);
+  text-align: center;
   background-color: #fff;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 50px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .service:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service h3 {
-  color: #333;
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2e2e2e;
   margin-bottom: 20px;
 }
 
 .service p {
-  color: #777;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #4c4c4c;
+  margin-bottom: 20px;
 }
 
-/* Estilos para el footer */
-
-footer {
-  background-color: #333;
+.service button {
+  background-color: #2e2e2e;
   color: #fff;
-  text-align: center;
-  padding: 40px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-footer p {
-  font-size: 16px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-footer a:hover {
-  color: #c4c4c4;
-}
