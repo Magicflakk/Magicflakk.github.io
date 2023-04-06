@@ -1,131 +1,113 @@
-/* Estilos para la página principal */
-
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-/* Estilos generales */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+font-family: "Montserrat", sans-serif;
 }
 
-/* Contenedor principal */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+/* Colores /
+body {
+color: black;
+background-color: white;
+}
+a {
+color: #1e90ff; / Azul oscuro /
+}
+h1, h2, h3 {
+color: #e60000; / Rojo /
+}
+#services, #portfolio, #about, #contact {
+background-color: #f8f8f8; / Gris claro */
 }
 
-/* Encabezado */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+/* Estilo de enlaces /
+a {
+text-decoration: none;
+border-bottom: 2px solid #1e90ff; / Azul oscuro /
+}
+a:hover {
+border-bottom-color: #e60000; / Rojo */
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #fff;
+/* Estilo de galería */
+.gallery {
+display: flex;
+flex-wrap: wrap;
+}
+.gallery img {
+width: 50%;
+padding: 10px;
+box-sizing: border-box;
 }
 
-.header ul {
-  display: flex;
+/* Estilo de formulario /
+form {
+display: flex;
+flex-direction: column;
+}
+label, input, textarea {
+margin: 5px 0;
+font-size: 1.2em;
+}
+input, textarea {
+padding: 5px;
+border: none;
+border-bottom: 2px solid #1e90ff; / Azul oscuro /
+background-color: transparent;
+}
+input:focus, textarea:focus {
+outline: none;
+border-bottom-color: #e60000; / Rojo /
+}
+button[type="submit"] {
+margin-top: 10px;
+padding: 10px;
+background-color: #1e90ff; / Azul oscuro /
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button[type="submit"]:hover {
+background-color: #e60000; / Rojo */
 }
 
-.header li {
-  margin-left: 20px;
+/* Estilo de encabezado y pie de página */
+header, footer {
+background-color: black;
+color: white;
+text-align: center;
+}
+header h1 {
+font-size: 3em;
+margin: 0;
+}
+header p {
+font-size: 1.5em;
+margin: 0;
+}
+footer p {
+font-size: 0.8em;
+margin: 0;
+padding: 10px;
 }
 
-.header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
+/* Estilo de secciones */
+section {
+padding: 50px 20px;
 }
 
-/* Banner */
-.banner {
-  background-image: linear-gradient(to bottom right, #2e2e2e, #4c4c4c);
-  padding: 100px 0;
-  text-align: center;
-}
-
-.banner h2 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.banner p {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.banner button {
-  background-color: #fff;
-  color: #2e2e2e;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.banner button:hover {
-  background-color: #2e2e2e;
-  color: #fff;
-}
-
-/* Servicios */
-.services {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 80px;
-}
-
+/* Estilo de servicios /
 .service {
-  flex-basis: calc(33.33% - 20px);
-  text-align: center;
-  background-color: #fff;
-  padding: 50px 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+margin-bottom: 50px;
 }
-
-.service:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-}
-
 .service h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #2e2e2e;
-  margin-bottom: 20px;
+margin: 0;
+font-size: 2em;
+color: #e60000; / Rojo */
 }
-
 .service p {
-  font-size: 1.2rem;
-  color: #4c4c4c;
-  margin-bottom: 20px;
+margin: 20px 0;
+font-size: 1.2em;
 }
-
-.service button {
-  background-color: #2e2e2e;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
